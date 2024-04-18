@@ -12,5 +12,10 @@ namespace PhilosopherApp.Data
     {
         public DbSet<Philosopher> Philosophers { get; set; }
         public DbSet<Quote> Quotes { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Data Source= (localdb)\\MSSQLLocalDB; Initial Catalog = PhilosopherAppData");
+        }
     }
 }

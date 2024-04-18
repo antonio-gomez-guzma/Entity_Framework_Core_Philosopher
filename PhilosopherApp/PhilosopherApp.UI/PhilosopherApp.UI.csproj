@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PhilosopherApp.Data\PhilosopherApp.Data.csproj" />
+    <ProjectReference Include="..\PhilosopherApp.Domain\PhilosopherApp.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

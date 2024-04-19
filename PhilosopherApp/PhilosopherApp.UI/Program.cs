@@ -10,16 +10,6 @@ namespace PhilosopherApp.UI
     {
         private static PhilosopherContext _Context = new PhilosopherContext();
 
-        //private static void Main(string[] args)
-        //{
-        //    _context.Database.EnsureCreated();
-        //    GetSamurais("Before Add:");
-        //    AddSamurai();
-        //    GetSamurais("After Add:");
-        //    Console.Write("Press any key...");
-        //    Console.ReadKey();
-        //}
-
         private static void Main(string[] args)
         {
             _Context.Database.EnsureCreated();
